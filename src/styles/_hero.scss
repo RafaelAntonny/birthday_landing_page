@@ -1,0 +1,42 @@
+.hero {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-image: url(../images/Fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__text {
+        margin-top: 1.25rem;
+        margin-bottom: 4rem;
+        font-family: Nunito;
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 2.75rem;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    &__year {
+        margin: 0 auto;
+        height: 96px;
+        display: block;
+
+        filter: drop-shadow(3px 4px 2px rgba(0, 0, 0, 0.35));
+    }
+
+    @media (max-width: 640px) {
+        padding: 2.5rem 0;
+
+        &__year {
+            height: 64px;
+        }
+
+        &__text {
+            font-size: 1.375rem;
+            line-height: 1.5rem;
+            margin: 1.5rem 0;
+        }
+    }
+}
